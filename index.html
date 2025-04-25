@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil GitHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Background Decorative Images -->
+    <img src="assets/img/decorative-img.png" class="bg-image top-left">
+    <div class="bg-image bottom-left"></div>
+    <div class="bg-image top-right"></div>
+    
+
+
+    <div class="container">
+        <h1>
+            <img src="assets/img/octocat.png" alt="GitHub Logo" class="github-logo">
+            Perfil GitHub
+        </h1>
+        <div class="search-container">
+            <div class="input-wrapper">
+                <input type="text" placeholder="Digite um usuário do Github">
+                <button>
+                    <img src="assets/img/search_icon.png" alt="Search Icon" class="search-icon">
+                </button>
+                <div class="spinner" id="loading-spinner"></div>
+            </div>
+        </div>
+
+        <!-- Alert Box (Hidden by default) -->
+        <div id="alert-box" class="alert-box hidden">
+            <p>Usuário não encontrado. Verifique o nome e tente novamente.</p>
+        </div>
+
+        <!-- Profile Box (Hidden by default) -->
+        <!-- Search for profile Reni-amorim-->
+        <div id="profile-box" class="profile-box hidden">
+            <div class="profile-content">
+                <div class="profile-image-container">
+                    <img id="profile-image" src="/api/placeholder/150/150" alt="Perfil" class="profile-image">
+                </div>
+                <div class="profile-info">
+                    <h2 id="profile-name">Lucas Mendes</h2>
+                    <p id="profile-bio">Desenvolvedor front-end apaixonado por criar interfaces intuitivas e acessíveis. Especialista em UX/UI e e-commerces, transformando design em código eficiente. Sempre explorando novas tecnologias para melhorar a experiência do usuário. 🚀</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script-search.js"></script>
+</body>
+</html>
